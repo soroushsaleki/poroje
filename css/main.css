@@ -1,0 +1,807 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+@font-face {
+  font-family: matn;
+  src: url(../fonts/IRANSansX-Medium.woff2);
+}
+@font-face {
+  font-family: adad;
+  src: url(../fonts/IRANSansXFaNum-Medium.woff2);
+}
+:root {
+  --color1: rgb(238, 56, 78);
+}
+div.baner {
+  width: 1522px;
+  height: 60px;
+  position: sticky;
+  object-fit: contain;
+  top: 0;
+  z-index: 999;
+}
+div.baner > img {
+  width: inherit;
+  height: inherit;
+}
+/*serch*/
+div.search {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 12px;
+  background-color: white;
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+}
+div.search > div.t1 {
+  width: 85%;
+  height: 44px;
+  display: flex;
+  flex-flow: row wrap;
+}
+div.search > div.t1 > div.jostoju {
+  width: 50%;
+  height: 44px;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-right: 20px;
+  background-color: rgb(240, 240, 241);
+  border-radius: 8px;
+  padding-right: 20px;
+}
+div.search > div.t1 > div.jostoju > span {
+  width: 90%;
+  height: 22px;
+  margin-right: 15px;
+  font-family: matn;
+  font-size: small;
+  color: lightslategray;
+}
+div.search > div.t2 {
+  width: 15%;
+  height: 44px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+div.search > div.t2 > div.r {
+  width: 60%;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border: solid 1px;
+  border-color: lightgrey;
+  border-radius: 8px;
+  justify-content: center;
+  margin-left: 2px;
+}
+div.search > div.t2 > div.r > span {
+  font-family: matn;
+  font-size: small;
+  color: rgb(61, 65, 73);
+  margin-right: 10px;
+}
+div.search > div.t2 > a {
+  border-right: solid 1px;
+  border-color: rgb(224, 224, 226);
+}
+div.search > div.t2 > a {
+  margin: 10px;
+  padding-right: 23px;
+}
+/*end serch*/
+/*menu*/
+div.menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-flow: row wrap;
+}
+div.menu > div.right {
+  width: 70%;
+  height: inherit;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+div.menu > div.right > div {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 15px;
+}
+
+div.menu > div.right > div > a {
+  font-family: matn;
+  font-size: small;
+  color: rgb(98, 102, 109);
+  text-decoration: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+div.menu > div.right > div > a > img {
+  margin-left: 5px;
+  height: 18px;
+}
+
+div.menu > div.right > div.t1 > a {
+  color: rgb(66, 71, 80);
+}
+div.menu > div.right > div.t2 > span {
+  color: lightgrey;
+  font-size: larger;
+  margin-left: 5px;
+}
+/*end menu*/
+div.story {
+  width: 100%;
+  height: 143px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+div.story > div.story2 {
+  width: 82%;
+  height: 138px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+div.story > div.story2 > div.t {
+  width: 155px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.story > div.story2 > div.t > a {
+  width: 75px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(66, 71, 80);
+  font-family: matn;
+  font-size: small;
+}
+div.story > div.story2 > div.t > a > div {
+  width: 80px;
+  height: 80px;
+  border: solid 2px;
+  border-color: red;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+div.story > div.story2 > div.t > a > div > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.digar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 15px;
+}
+div.digar > div {
+  width: 90px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+div.digar > div > a {
+  width: 90px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(66, 71, 80);
+  font-family: matn;
+  font-size: small;
+  gap: 10px;
+}
+div.digar > div > a > img {
+  width: 52px;
+  height: 52px;
+  display: flex;
+}
+div.digar > div.akhar > img {
+  background-color: rgb(130, 130, 130);
+  border-radius: 50%;
+}
+div.a1 {
+  display: flex;
+  justify-content: center;
+}
+div.a1 > img {
+  width: 88%;
+  height: 120px;
+}
+div.takhfif {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+div.takhfif > div > a > img {
+  width: 322px;
+  height: 241px;
+  border-radius: 18px;
+}
+div.takhfif2 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+div.takhfif2 > div > a > img {
+  width: 662px;
+  height: 264px;
+  border-radius: 18px;
+}
+div.daste {
+  width: 89%;
+  height: 433px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 120px;
+  gap: 10px;
+}
+div.daste > div.t2 {
+  width: 100%;
+  height: 433px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10px;
+}
+div.daste > div.t2 > div {
+  width: 179px;
+  height: 134px;
+  font-family: matn;
+  font-size: smaller;
+  color: rgb(66, 71, 80);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.daste > div.t2 > div > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+}
+div.daste > div.t2 > div > span {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+div.daste > div.t {
+  font-family: matn;
+  font-size: x-large;
+  display: flex;
+  align-items: end;
+}
+div.pishnahad {
+  width: 90%;
+  height: 394px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 10px auto;
+}
+div.pishnahad > div.t1 {
+  font-family: matn;
+  font-size: x-large;
+  display: flex;
+  align-items: end;
+}
+div.pishnahad > div.t2 {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+div.pishnahad > div.t2 > div {
+  width: 180px;
+  height: 138px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.533);
+}
+div.pishnahad > div.t2 > div > a {
+  width: 155px;
+  height: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(66, 71, 80);
+  font-family: matn;
+  font-size: small;
+}
+div.pishnahad > div.t2 > div > a > img {
+  width: 70px;
+  height: 70px;
+}
+div.pishnahad > div.t2 > div.itm1 {
+  border-top-right-radius: 15px;
+}
+div.pishnahad > div.t2 > div.itm2 {
+  border-top-left-radius: 15px;
+}
+div.pishnahad > div.t2 > div.itm3 {
+  border-bottom-right-radius: 15px;
+}
+div.pishnahad > div.t2 > div.itm4 {
+  border-bottom-left-radius: 15px;
+}
+div.berand {
+  width: 90%;
+  height: 220px;
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.299);
+  margin: 10px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.berand > div.t1 {
+  font-family: matn;
+  font-size: x-large;
+  display: flex;
+  align-items: end;
+}
+div.berand > div.t2 {
+  width: 100%;
+  height: 118px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+div.berand > div.t2 > div {
+  border-left: solid 1px;
+  border-color: rgba(181, 184, 191, 0.541);
+  margin-left: 20px;
+}
+div.berand > div.t2 > div > img {
+  width: 110px;
+  height: 110px;
+}
+div.digiplus {
+  width: 90%;
+  margin: 10px auto;
+}
+div.digiplus > a > img {
+  width: 100%;
+  height: 390px;
+}
+div.digiclub {
+  width: 90%;
+  margin: 10px auto;
+}
+div.digiclub > a > img {
+  width: 100%;
+  height: 130px;
+}
+div.takhfif3 {
+  width: 90%;
+  height: 180px;
+  margin: 10px auto;
+}
+div.takhfif3 > img {
+  width: 100%;
+  height: 167px;
+  border-radius: 15px;
+}
+div.porforush {
+  width: 90%;
+  height: 403px;
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.541);
+  border-radius: 15px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+div.porforush > div.t1 {
+  font-family: matn;
+  font-size: x-large;
+  display: flex;
+  align-items: end;
+}
+div.porforush > div.t2 {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+div.porforush > div.t2 > div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+div.porforush > div.t2 > div > div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 15px;
+}
+div.porforush > div.t2 > div > div > img {
+  width: 86px;
+  height: 86px;
+}
+div.porforush > div.t2 > div > div > span {
+  font-size: xx-large;
+  color: rgb(0, 204, 255);
+  font-family: adad;
+}
+div.porforush > div.t2 > div > div > p {
+  font-family: matn;
+  font-size: small;
+  color: rgba(52, 56, 62, 0.901);
+  border-bottom: solid 1px;
+  border-color: rgba(181, 184, 191, 0.278);
+}
+div.mont {
+  width: 90%;
+  height: 820px;
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.541);
+  border-radius: 15px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.mont > div.t1 {
+  font-family: matn;
+  font-size: x-large;
+  display: flex;
+  align-items: end;
+  margin-bottom: 25px;
+}
+div.mont > div.t2 {
+  width: 100%;
+  height: 726px;
+  display: flex;
+  flex-flow: row wrap;
+}
+div.mont > div.t2 > div {
+  width: 218px;
+  height: 242px;
+  border-left: solid 1px;
+  border-bottom: solid 1px;
+  border-color: rgba(181, 184, 191, 0.41);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+div.mont > div.t2 > div > img {
+  width: 150px;
+  height: 150px;
+}
+div.mont > div.t2 > div > div {
+  display: flex;
+  flex-direction: column;
+}
+div.mont > div.t2 > div > div > div {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: adad;
+  font-size: smaller;
+}
+div.mont > div.t2 > div > div > div > span {
+  margin-right: 67px;
+  margin-left: 5px;
+}
+div.mont > div.t2 > div > div > div > div {
+  width: 34px;
+  height: 20px;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 48px;
+}
+div.mont > div.t2 > div > div > span {
+  font-family: adad;
+  font-size: small;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+  color: lightgrey;
+  text-decoration: line-through;
+}
+div.mont > div.t2 > div.t {
+  border-left: none;
+  font-size: large;
+}
+div.khandani {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 30px auto;
+}
+div.khandani > div.r {
+  width: 15%;
+  font-size: x-large;
+}
+div.khandani > div.c {
+  width: 65%;
+}
+div.khandani > div.l {
+  width: 20%;
+  font-size: small;
+  color: rgb(36, 160, 160);
+}
+div.khandani2 {
+  width: 93%;
+  height: 280px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 10px auto;
+}
+div.khandani2 > div {
+  width: 330px;
+  height: 280px;
+  border: solid 1px;
+  border-radius: 10px;
+  border-color: rgba(181, 184, 191, 0.41);
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: none;
+}
+div.khandani2 > div > img {
+  width: 330px;
+  height: 200px;
+  border-radius: 10px;
+}
+div.khandani2 > div > span {
+  font-family: matn;
+  font-size: small;
+  color: rgba(0, 0, 0, 0.667);
+}
+div.fot1 {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+div.fot1 > div.r > img {
+  width: 130px;
+  height: 30px;
+}
+div.fot1 > div.l {
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.41);
+  border-radius: 15px;
+}
+div.f {
+  width: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 15px auto;
+}
+div.f > span {
+  font-family: matn;
+  font-size: small;
+  color: rgba(0, 0, 0, 0.686);
+}
+div.f > p {
+  margin: 0px 25px;
+  font-family: matn;
+  font-size: small;
+  color: rgba(0, 0, 0, 0.686);
+}
+div.aks {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 50px auto;
+  justify-content: center;
+  gap: 200px;
+}
+div.aks > img {
+  width: 56px;
+  height: 56px;
+}
+div.fot2 {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+div.fot2 > div {
+  width: 25%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  gap: 15px;
+}
+div.fot2 > div > p {
+  font-family: matn;
+}
+div.fot2 > div > span {
+  font-family: matn;
+  color: rgba(0, 0, 0, 0.453);
+}
+div.fot2 > div > div {
+  display: flex;
+  gap: 25px;
+}
+div.fot2 > div > div > img {
+  width: 45px;
+}
+div.download {
+  width: 95%;
+  margin: 10px auto;
+}
+div.download > img {
+  width: 100%;
+  margin: 10px auto;
+}
+div.digis {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 240, 241);
+}
+div.digis > div {
+  width: inherit;
+  height: 60px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+div.digis > div > div.t3 {
+  width: 188px;
+  height: 60px;
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.digis > div > div > img {
+  width: 90px;
+}
+div.digis > div > div.t4 {
+  width: 217px;
+  height: 60px;
+  border: solid 1px;
+  border-color: rgba(181, 184, 191, 0.41);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.moarefi {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 70px;
+}
+div.moarefi>div {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 90px;
+}
+div.moarefi > div.t1 {
+  width: 65%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+div.moarefi > div.t1 > div > h1 {
+  font-family: matn;
+  color: rgba(0, 0, 0, 0.671);
+  font-size: x-large;
+}
+div.moarefi > div.t1 > div > p {
+  font-family: matn;
+  color: rgba(0, 0, 0, 0.548);
+}
+div.moarefi > div.t1 > div > span {
+  color: rgb(46, 189, 189);
+}
+div.moarefi > div > div.t2 {
+  width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+div.moarefi > div > div.t2 > div {
+  width: 90px;
+  height: 90px;
+  border: solid 1px;
+  border-color: rgba(116, 118, 122, 0.41);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+div.moarefi > div > div.t2 > div > img {
+  width: 75px;
+}
